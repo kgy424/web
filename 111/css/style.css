@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-size의 기본 사이즈는 16pt
+    근데 10pt 밑으로는 안 줄어듦 */
+    font-size: 14px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* reset */
+li {
+    /* 블릿 문자 삭제 */
+    list-style: none;
+}
+
+a {
+    /* a태그가 가진 색과 밑줄을 삭제함. */
+    color: #333;
+    text-decoration: none;
+}
+
+/* warp */
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+#header {}
+
+#header h1 {
+    float: left;
+}
+
+#header .Nav {
+    float: right;
+    margin-top: 20px;
+}
+
+#header .Nav ul {}
+
+#header .Nav ul li {
+    position: relative;
+    float: left;
+    width: 120px;
+    text-align: center;
+    /* border: 1px solid red;
+    보더만 주면 보더 선인 1px까지 총 122가 넓이가 되는데
+    box-sizing: border-box;
+    를 넣으면 보더가 넓이 안에 들어감. */
+
+
+}
+
+#header .Nav ul li a {
+
+    background-color: #ccc;
+    display: block;
+    padding: 20px 15px;
+    transition: 0.3s;
+}
+
+#header .Nav ul li a:hover {
+    background-color: #ddd;
+}
+
+#header .Nav ul li .subMenu {
+    display: none;
+    /* <-> display: block;
+    none이랑 block은 애니메이션이 안 걸림
+    opacity는 애니메이션 됨 */
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+#banner {
+    height: 378px;
+    overflow: hidden;
+}
+
+#banner .slideList {
+    position: relative;
+}
+
+#banner .slideList .slideImg {
+    position: relative;
+}
+
+#banner .slideList .slideImg h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+
+}
+
+#banner .slideList .slideImg img {
+    width: 100%;
+    /* img태그 특징 = 인라인요소 
+    --> 예측하지 못하는 공간을 가지고있기 때문
+    해결방법
+    1)  display: block;
+    2) vertical-align: top; */
+    display: block;
+}

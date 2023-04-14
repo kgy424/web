@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset */
+li {
+    list-style: none;
+}
+
+/* 블릿 기호 삭제 */
+a {
+    text-decoration: none;
+    /* 하이퍼링크 밑줄 빼기 */
+    color: #333;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* wrap */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+#header {}
+
+#header h1 {
+    float: left;
+    width: 110px;
+    padding: 15px 0 0;
+}
+
+#header h1 a {}
+
+#header h1 a img {
+    /* 인라인 요소는 공간을 인식하지 못 함.
+    근데 인라인 요소면서 공간을 인식하는게 있음.
+    --> 1) img 2)button */
+    width: 100%;
+}
+
+
+#header .Nav {
+    float: right;
+    background-color: #ffefbb;
+}
+
+#header .Nav ul {}
+
+#header .Nav ul li {
+    position: relative;
+    float: left;
+    width: 140px;
+    text-align: center;
+    /* 나의 자식 중에서 인라인 요소가 있거든 가운데로 정렬하라는 의미 */
+    font-size: 13px;
+}
+
+#header .Nav ul li a {
+    display: block;
+    padding: 24px 20px 20px;
+    transition: 0.3s;
+}
+
+#header .Nav ul li a:hover {
+    /* :hover은 마우스가 영역에 진입하면~이라는거
+     */
+    background-color: #ccc;
+}
+
+#header .Nav ul li .subMenu {
+    display: none;
+    position: absolute;
+    left: 0;top: 65px;
+}
+
+#header .Nav ul li .subMenu li {}
+
+#header .Nav ul li .subMenu li a {
+    background-color: #8ef0df;
+    padding: 10px;
+    color: #000000;
+
+}
+
+#header .Nav ul li .subMenu li a:hover{background-color: #eeffbf;}
+
+/* banner */
+#banner{}
+#banner .slideList{}
+#banner .slideList .slideImg{}
+#banner .slideList .slideImg h2{}
+#banner .slideList .slideImg img{}

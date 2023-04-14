@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKIT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1>
+                <a href="#">
+                    <img src="img/logo.jpg" alt="cookit">
+                </a>
+            </h1>
+            <nav class="Nav">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">Introduce Cookit</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Sub-Menu1</a></li>
+                            <li><a href="#">Sub-Menu2</a></li>
+                            <li><a href="#">Sub-Menu3</a></li>
+                            <li><a href="#">Sub-Menu4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cookit Menu</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Sub-Menu1</a></li>
+                            <li><a href="#">Sub-Menu2</a></li>
+                            <li><a href="#">Sub-Menu3</a></li>
+                            <li><a href="#">Sub-Menu4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Review</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Sub-Menu1</a></li>
+                            <li><a href="#">Sub-Menu2</a></li>
+                            <li><a href="#">Sub-Menu3</a></li>
+                            <li><a href="#">Sub-Menu4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Sub-Menu1</a></li>
+                            <li><a href="#">Sub-Menu2</a></li>
+                            <li><a href="#">Sub-Menu3</a></li>
+                            <li><a href="#">Sub-Menu4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">My Cookit</a>
+                        <ul class="subMenu">
+                            <li><a href="#">Sub-Menu1</a></li>
+                            <li><a href="#">Sub-Menu2</a></li>
+                            <li><a href="#">Sub-Menu3</a></li>
+                            <li><a href="#">Sub-Menu4</a></li>
+                        </ul>
+                    </li>
+                </ul><!-- //subMenu -->
+            </nav><!-- //nav -->
+        </header><!-- //header -->
+        <section id="banner">
+            <div class="slideList">
+                <div class="slideImg">
+                    <h2>이미지1</h2>
+                    <img src="img/main1.jpg" alt="쿠킷 앱 런칭 기념 이벤트">
+                </div><!-- //slideImg1 -->
+                <div class="slideImg">
+                    <h2>이미지2</h2>
+                    <img src="img/main2.jpg" alt="기획전 오픈">
+                </div><!-- //slideImg2 -->  
+                <div class="slideImg">
+                    <h2>이미지3</h2>
+                    <img src="img/main3.jpg" alt="신메뉴 이벤트">
+                </div><!-- //slideImg3 -->
+            </div><!-- slideList -->
+        </section><!-- //banner -->
+    </div><!-- //warp -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $('.Nav ul li').mouseover(function(){
+            $(this).find('.subMenu').stop().slideDown();
+        })
+        $('.Nav ul li').mouseout(function(){
+            $(this).find('.subMenu').stop().slideUp();
+        })
+    </script>
+    
+</body>
+
+</html>

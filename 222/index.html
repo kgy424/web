@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COOKIT</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/faviconV2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/faviconV2.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/faviconV2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/faviconV2.png">
 </head>
 
 <body>
@@ -61,44 +67,198 @@
                             <li><a href="#">Sub-Menu1</a></li>
                             <li><a href="#">Sub-Menu2</a></li>
                             <li><a href="#">Sub-Menu3</a></li>
-                            <li><a href="#">Sub-Menu4</a></li>
+                            <li class="contact"><a href="#">이걸 찾다니 대단하군</a></li>
                         </ul>
                     </li>
                 </ul><!-- //subMenu -->
             </nav><!-- //nav -->
         </header><!-- //header -->
         <section id="banner">
-            <div class="slideList">
+            <div class="slideList clearfix">
                 <div class="slideImg">
-                    <h2>이미지1</h2>
-                    <img src="img/main1.jpg" alt="쿠킷 앱 런칭 기념 이벤트">
+                    <h2>쿠킷 앱 런칭 기념 이벤트</h2>
+                    <img src="img/main1.jpg" alt="선물하기 이벤트">
                 </div><!-- //slideImg1 -->
                 <div class="slideImg">
-                    <h2>이미지2</h2>
+                    <h2>기획전 오픈</h2>
                     <img src="img/main2.jpg" alt="기획전 오픈">
-                </div><!-- //slideImg2 -->  
+                </div><!-- //slideImg2 -->
                 <div class="slideImg">
-                    <h2>이미지3</h2>
+                    <h2>신메뉴 이벤트</h2>
                     <img src="img/main3.jpg" alt="신메뉴 이벤트">
                 </div><!-- //slideImg3 -->
             </div><!-- slideList -->
         </section><!-- //banner -->
+        <section id="content1" class="clearfix">
+            <article class="left">
+                <h2 class="title">우리 집도 배달되냐?</h2>
+                <p class="desc">너네 집은 배달 안 된다.</p>
+                <a href="#" class="btn">
+                    배송지 검색
+                </a>
+            </article><!-- //left -->
+            <article class="right">
+                <h2 class="title">우리 집도 배달되냐?</h2>
+                <p class="desc">너네 집은 배달 안 된다.</p>
+                <a href="#" class="btn">
+                    09:12:24 <em>남은 시간</em>
+                </a>
+            </article><!-- //right -->
+        </section><!-- //content1 -->
+        <section id="content2">
+            <div class="tab_menu">
+                <div class="tab_btn">
+                    <ul class="clearfix">
+                        <li class="active"><a href="#">
+                                Now Best
+                            </a></li>
+                        <li><a href="#">
+                                Steady Seller
+                            </a></li>
+                    </ul>
+                </div><!-- //tab_btn -->
+                <div class="tab_cont">
+                    <div class="best">
+                        <figure>
+                            <img src="img/banner1.jpg" alt="우삼겹 샤브샤브">
+                            <figcaption>우삼겹 샤브샤브</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/banner5.jpg" alt="평양식 어복쟁반">
+                            <figcaption>평양식 어복쟁반</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/banner3.jpeg" alt="부채살 찹스테이크">
+                            <figcaption>부채살 찹스테이크</figcaption>
+                        </figure>
+                    </div><!-- //best -->
+                    <div class="view">
+                        <figure>
+                            <img src="img/banner6.jpg" alt="탱글탱글 불쭈꾸미볶음">
+                            <figcaption>탱글탱글 불쭈꾸미볶음</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/banner2.jpg" alt="스페인식 감바스">
+                            <figcaption>스페인식 감바스</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/banner4.jpeg" alt="토마토 비프스튜">
+                            <figcaption>토마토 비프스튜</figcaption>
+                        </figure>
+                    </div><!-- //view -->
+                </div><!-- //tab_cont -->
+            </div><!-- //tab_menu -->
+        </section><!-- //content2 -->
+        <footer id="footer">
+            <h2><img src="img/flogo.jpg" alt="cookit"></h2>
+            <div class="foot">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적 고지</a></li>
+                    <li><a href="#">사업자 정보 확인</a></li>
+                </ul>
+                <address>
+                    씨제이제일제당주(주) 대표자:신현재<br>
+                    주소:서울시 강남구 서초대로 77길 13
+                    사업자등록번호 : 100-38-30489<br>
+                    통신판매업신고 중구 88903호 개인정보취급방침
+                </address>
+            </div><!-- //foot -->
+        </footer><!-- //footer -->
     </div><!-- //warp -->
 
+
+    <!-- layer팝업 -->
+    <div class="layer-bg">
+        <div class="layer">
+            <h2>제목</h2>
+            <a href="#" class="close">Close</a>
+        </div>
+    </div>
 
 
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
-        $('.Nav ul li').mouseover(function(){
+        $('.Nav ul li').mouseover(function () {
             $(this).find('.subMenu').stop().slideDown();
         })
-        $('.Nav ul li').mouseout(function(){
+        $('.Nav ul li').mouseout(function () {
             $(this).find('.subMenu').stop().slideUp();
         })
+
+        //slide
+        var currentIndex = 0;
+        //console.log(currentIndex)
+
+        //setInterval(어떤 일, 시간)-->시간마다 어떤 일이 일어난다
+        //setInterval(function(){}, 1000)-->1초 마다 함수가 실행 됨
+        //조건문
+        /* if(조건문){
+            조건문이 참일 때 실행문
+        }else{
+            조건문이 거짓일 때 실행문
+        } */
+
+        setInterval(function () {
+            if (currentIndex < 2) {
+                currentIndex++; //1씩 더해짐
+            } else {
+                currentIndex = 0;
+            }
+
+
+            var slidePosition = currentIndex * (-1000) + "px";
+            console.log(slidePosition)
+            /* $('.slideList').animate({실행문},시간) */
+            $('.slideList').animate({
+                left: slidePosition
+            }, 1000)
+
+
+        }, 3000)
+
+        //tab_menu
+        var tabBtn = $('.tab_btn ul li');
+        var tabCont = $('.tab_cont>div');
+        tabCont.hide().eq(0).show();
+        /* hide()-->display:none;
+        show()-->display:block;
+        .eq()-->equaivalent(동등) 같다라고 생각하면 됨.
+        태그들이 태생적으로 가지고 태어나는 번호가 있음.
+        같은 부모 밑에 자식은 0번부터 번호를 가짐. */
+        // tabBtn.click(클릭하면 할 일);
+        // tabBtn.click(function(){});
+        tabBtn.click(function () {
+            var index = $(this).index();
+            console.log(index)
+            tabCont.hide();
+            tabCont.eq(index).show();
+            tabBtn.removeClass('active')
+            $(this).addClass('active')
+        });
+
+        //window 창 만들기
+        //$('.contact').click(어떤일)
+        // $('.contact').click(function(){실행문})
+        $('.contact').click(function () {
+            window.open("contact.html", "child", "width=400,height=500,left=200,top=200");
+        })
+
+        //pop-up
+        $("#content1 .right").click(function () {
+            // $(".layer-bg").show();
+            $(".layer-bg").fadeIn();
+
+        })
+        $(".layer .close").click(function(){
+            // $(".layer-bg").hide();
+            $(".layer-bg").fadeOut(2000);
+        })
     </script>
-    
+
 </body>
 
 </html>

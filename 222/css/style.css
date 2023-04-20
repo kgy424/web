@@ -51,6 +51,7 @@ a {
 #header .Nav {
     float: right;
     background-color: #ffefbb;
+    border-radius: 10px;
 }
 
 #header .Nav ul {}
@@ -79,23 +80,246 @@ a {
 #header .Nav ul li .subMenu {
     display: none;
     position: absolute;
-    left: 0;top: 65px;
+    left: 0;
+    top: 65px;
+    z-index: 10;
 }
 
 #header .Nav ul li .subMenu li {}
 
 #header .Nav ul li .subMenu li a {
-    background-color: #8ef0df;
+    background-color: #f0c48e;
     padding: 10px;
     color: #000000;
 
 }
 
-#header .Nav ul li .subMenu li a:hover{background-color: #eeffbf;}
+#header .Nav ul li .subMenu li a:hover {
+    background-color: #eeffbf;
+}
 
 /* banner */
-#banner{}
-#banner .slideList{}
-#banner .slideList .slideImg{}
-#banner .slideList .slideImg h2{}
-#banner .slideList .slideImg img{}
+#banner {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+#banner .slideList {
+    position: relative;
+    width: 3000px;
+}
+
+#banner .slideList .slideImg {
+    position: relative;
+    float: left;
+    width: 1000px;
+}
+
+#banner .slideList .slideImg h2 {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    color: azure;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+#banner .slideList .slideImg img {
+    width: 100%;
+    /* img태그 아래 쪽에 빈틈 처리
+    원인: img태그가 안러안 요소이기 때문
+    1) display:block;
+    2) vertical-align:top; */
+    display: block;
+}
+
+/* content1 */
+#content1 {
+    margin-top: 20px;
+}
+
+#content1 .left {
+    float: left;
+    width: 49%;
+    background-color: #f2f2f2;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    /* background-position: x값 y값; */
+    /* background-position: right 20px( center; */
+    background-position: right 20px center;
+
+    /* background: color image repeat position/size ; --> 위에 모든 백그라운드 명령을 줄인거임 */
+    background: #f2f2f7 url(../img/bg1.jpg) no-repeat right 20px center/130px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#content1 .title {
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+#content1 .desc {
+    font-size: 14px;
+    color: #666;
+    padding-bottom: 15px;
+}
+
+#content1 .left .btn {
+    background: url(../img/icon1.jpg) no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px
+}
+
+#content1 .right {
+    float: right;
+    width: 49%;
+    /* background: color image repeat position/size; */
+    background: #f2f2f2 url(../img/bg2.jpg) no-repeat right 20px center/130px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#content1 .right .btn {
+    background: url(../img/icon2.jpg) no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+}
+
+#content1 .right .btn em {}
+
+/* content2 */
+
+#content2 {
+    margin-top: 30px;
+}
+
+#content2 .tab_menu {}
+
+#content2 .tab_btn {}
+
+#content2 .tab_btn ul {}
+
+#content2 .tab_btn ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+#content2 .tab_btn ul li.active a {
+    color: #000;
+}
+
+#content2 .tab_btn ul li a {
+    border: 3px solid paleturquoise;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: #999;
+    font-size: 24px;
+    /* 인라인 요소는 padding, margin의 상하가 적용이 안됨 */
+    display: block;
+}
+
+/* tab_cont */
+#content2 .tab_cont {
+    padding-top: 10px;
+}
+
+#content2 .tab_cont>div {
+    overflow: hidden;
+}
+
+/* float으로 인해 부모 깨짐 현상 막기
+1) clear:boath로 처리
+2) overflow:hiden;으로 처리
+3)부모에게 강제로 높이값 주기 */
+
+#content2 .tab_cont>div figure {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+#content2 .tab_cont>div figure:last-child {
+    margin-right: 0;
+}
+
+#content2 .tab_cont>div figure img {
+    width: 100%;
+}
+
+#content2 .tab_cont>div figure figcaption {}
+
+/* footer */
+
+#footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #202020;
+    overflow: hidden;
+}
+
+#footer h2 {
+    float: left;
+}
+
+#footer h2 img {
+    width: 150px;
+}
+
+#footer .foot {
+    float: right;
+}
+
+#footer .foot ul {
+    padding-bottom: 10px;
+}
+
+#footer .foot ul li {
+    display: inline;
+
+}
+
+#footer .foot ul li a {
+    color: #ddd;
+}
+
+#footer .foot address {
+    color: #ccc;
+    font-style: normal;
+
+}
+
+/* layer-popup */
+.layer-bg {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    /* width: 100%;height: 100%;은 밑에 top, bottom0이랑 같음 */
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.layer-bg .layer {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.layer-bg .layer h2 {}
+
+.layer-bg .layer .close {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+

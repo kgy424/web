@@ -1,0 +1,73 @@
+<!DOCTYPE html><!-- 지금부터 html5버전의 문서가 만들어진다 -->
+<html lang="ko">
+<!-- 문서 언어 설정 en=english/ko=korean -->
+
+<head>
+    <meta charset="UTF-8"><!-- 전세계 언어 조합 방법 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 호환을 어떻게 할 것인가를 묻는 것.ie=inertnet explor->가장 최신 버전으로 보게 함.
+    만약 크롬이 깔려있으면 크롬 브라우저가 웹 페이지를 해석해서 보여주라는 의미임.
+    == chrome의 엔진을 사용하라
+    == ie로 열었다해도 껍데기는 ie지만 일 자체는 chrome이 함(chrome의 엔진을 쓰겠다 라는 의미)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 이 사이트의 넓이를 다양한 디바이스(사용자의 기기)에 맞추되 초기 비율을1(100%)로 지정함.-->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header_Logo" class="clearfix">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo/LOGO.png" alt="무빙사진동호회">
+                    </a>
+                </div><!-- //logo -->
+                <nav class="Nav">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">동호회 소개</a>
+                            <ul class="subMenu">
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">회칙</a></li>
+                                <li><a href="#">이용 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">갤러리</a>
+                            <ul class="subMenu">
+                                <li><a href="#">풍경 자연</a></li>
+                                <li><a href="#">인물</a></li>
+                                <li><a href="#">사물</a></li>
+                                <li><a href="#">동물</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">교육안내</a>
+                            <ul class="subMenu">
+                                <li><a href="#">기초 사진</a></li>
+                                <li><a href="#">디지털 사진</a></li>
+                                <li><a href="#">전물 사진</a></li>
+                            </ul>
+                        </li>
+                        <li class="contact"><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav><!-- //Nav -->
+            </div>
+        </header><!-- //header -->
+        <div id="imageslide">
+            <div id="imgs">
+                <img src="images/slide/images(1).jpg" alt="">
+                <img src="images/slide/images(2).jpg" alt="">
+                <img src="images/slide/images(3).jpg" alt="">
+                <img src="images/slide/images(4).jpg" alt="">
+                <img src="images/slide/images(5).jpg" alt="">
+            </div>
+        </div><!-- //imageslide -->
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

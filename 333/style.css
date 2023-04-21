@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+header {}
+
+#header_Logo {
+    padding: 20px;
+}
+
+#header_Logo .logo {
+    float: left;
+    width: 300px;
+}
+
+#header_Logo .logo a {}
+
+#header_Logo .logo a img {
+    width: 100%;
+}
+
+#header_Logo .Nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+#header_Logo .Nav ul {}
+
+#header_Logo .Nav ul li {
+    position: relative;
+    width: 120px;
+    float: left;
+    text-align: center;
+
+}
+
+#header_Logo .Nav ul li a {
+    padding: 10px 0;
+    display: block;
+    transition: 0.3s;
+}
+
+#header_Logo .Nav ul li a:hover {
+    background-color: #6abb99;
+    color: #fff;
+
+}
+
+#header_Logo .Nav ul li .subMenu {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 42px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#header_Logo .Nav ul li .subMenu li {}
+
+#header_Logo .Nav ul li .subMenu li a {
+    padding: 5px 0;
+    color: #000;
+}
+
+#header_Logo .Nav ul li .subMenu li a:hover {
+    background-color: #999;
+    color: #fff;
+
+}
+
+/* imageslide */
+#imageslide {position: relative;}
+
+#imageslide #imgs {
+    /* 자식이 float일때 부모가 float이면 그 부모는 깨지지 않는다.
+    자식이 float일때 부모가 position이 absolute, fixed이면 그 부모는 깨지지 않는다. */
+    position: absolute;
+    left: 0;top: 0;
+    width: 5000px;
+}
+
+
+#imageslide #imgs img {
+    float: left;
+}
